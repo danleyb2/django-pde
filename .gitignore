@@ -3,6 +3,10 @@ env34
 testing_prj/package_dev/*
 !__init__.py
 
+static_root
+media_root
+*.sqlite3
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
