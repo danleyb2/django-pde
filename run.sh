@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 
 source env34/bin/activate;
 cd testing_prj;

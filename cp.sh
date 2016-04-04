@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
-echo -e 'copying new application\n'
-cp -rf testing_prj/package_dev/* django-pa/pa/
-echo -e 'copying finnished\n'
+echo -e '[*]Copying new application\n'
+cp -R "${PROJECT_PATH}testing_prj/package_dev/." "${PROJECT_PATH}django-pa/pa/"
+echo -e '[*]Copying finnished\n'
