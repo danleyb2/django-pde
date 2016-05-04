@@ -1,5 +1,6 @@
 #my ignore
 env34
+.idea
 testing_prj/package_dev/*
 !__init__.py
 
