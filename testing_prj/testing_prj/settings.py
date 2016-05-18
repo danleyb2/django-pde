@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_PROFILE_MODULE = "project_dev.UserProfile"
+AUTH_PROFILE_MODULE = "package_dev.UserProfile"
+#AUTH_PROFILE_MODULE = "pa.UserProfile"
 
 # Application definition
 
