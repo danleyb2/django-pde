@@ -44,7 +44,10 @@ def de_activate_env():
 
 PROJECT_PATH = get_project_dir()  # '/home/ubuntu/workspace/'
 print("[-] Working on Project at {}".format(PROJECT_PATH))
-
+def clean():
+    print('[*] Cleaning Package')
+    # todo implement this
+    pass
 
 def cp(s,d):
     print('[*] Copying package files from \n\t{} to \n\t{} '.format(s,d))
@@ -88,12 +91,15 @@ if __name__ == '__main__':
     parser.add_argument("-r", help="Redeploy package",action="store_true")
     parser.add_argument("-c", type=str, help="Copy package",choices=['u','d'])
     parser.add_argument("-b", help="Build package",action="store_true")
+    parser.add_argument("-clean", help="Clean package",action="store_true")
     parser.add_argument("-q", "--quiet",
                         action="store_false", dest="verbose", default=True,
                         help="don't print status messages to stdout")
 
     args = parser.parse_args()
     print(args)
+    if args.clean:
+        clean()
     if args.r:
         redeploy()
     else:
