@@ -1,3 +1,0 @@
-[submodule "django-pa"]
-	path = django-pa
-	url = git@github.com:danleyb2/django-pa.git
