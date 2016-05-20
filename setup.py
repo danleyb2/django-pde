@@ -9,12 +9,12 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='pde',
+    name='django-pde',
     version=pde.__version__,
     packages=setuptools.find_packages(),
     include_package_data=True,
     zip_safe=False,
-    #install_requires=['Django'],
+    install_requires=['jinja2','sh'],
     license='GNU License',
     description='Django app that can be used to easily manage development of other django packages',
     long_description=README,
