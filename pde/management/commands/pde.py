@@ -47,7 +47,7 @@ class Command(BaseCommand):
         parser.add_argument("-f", "--force", dest="force", action="store_true", default=False, help="Will override existing files. Use with care.")
     
             
-        #parser.add_argument("-a", type=str, help=" Name")
+        parser.add_argument("-dest", type=str, help="Package destination directory")
         parser.add_argument("-i", help="Install package",action="store_true")
         parser.add_argument("-r", help="Redeploy package",action="store_true")
         parser.add_argument("-cp", type=str, help="Copy package",choices=['u','d'])

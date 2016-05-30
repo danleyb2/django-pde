@@ -18,4 +18,6 @@ quick setup
     # add pde to INSTALLED_APPS
 
     python manage.py pde -n myapp;   #creates a new package for myapp
+    python manage.py pde -n myapp -dest /home/danleyb2/packages;   #creates a new package for myapp in the path specified by `-dest`
+
         

@@ -83,7 +83,10 @@ class Pyckstart(object):
 
     def init_paths(self):
         # package destination location
-        self.pkg_dest_folder = os.path.join(self.PROJECT_PATH,self.options['app_name']+'-package')
+        if self.options['dest']:
+            self.pkg_dest_folder = os.path.join(self.options['dest'], self.options['app_name'] + '-package')
+        else:
+            self.pkg_dest_folder = os.path.join(self.PROJECT_PATH,self.options['app_name']+'-package')
         # get systemwide templates location
         module_path = os.path.dirname(os.path.realpath(__file__))
         self.root_files_path = os.path.join(module_path, '../..','templates','pde') # todo get from settings
